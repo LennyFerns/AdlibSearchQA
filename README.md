@@ -4,7 +4,7 @@ This is a **QA Automation Framework** built using **Selenium**, **TestNG**, **Ma
 
 ---
 
-## **Project Structure**
+## Project Structure
 NinjaV7/
 ├── src/
 │   ├── main/

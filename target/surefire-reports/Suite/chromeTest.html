@@ -55,20 +55,20 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>chromeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 20 19:08:24 EST 2025</td>
+<td>Started on:</td><td>Sat Apr 05 20:37:43 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>110 seconds (110277 ms)</td>
+<tr><td>Total time:</td><td>52 seconds (52839 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>datadriven regression smoke </td>
+<td>Included groups:</td><td>regression smoke </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,55 +76,43 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC06_PurchaseAGiftCertificate.testPurchaseAGiftCertificate()'><b>testPurchaseAGiftCertificate</b><br>Test class: testCases.TC06_PurchaseAGiftCertificate</td>
-<td></td>
+<td title='testCases.TC08_Advance_Search_Page.testAdvanceSearch()'><b>testAdvanceSearch</b><br>Test class: testCases.TC08_Advance_Search_Page<br>Parameters: laptop, Computers, TRUE, HP, TRUE, Results contain "laptop"</td>
+<td><div><pre>java.lang.AssertionError: Expected result not found: Results contain &quot;laptop&quot; expected [true] but found [false]
+	at testCases.TC08_Advance_Search_Page.testAdvanceSearch(TC08_Advance_Search_Page.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace77440299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace77440299'><pre>java.lang.AssertionError: Expected result not found: Results contain &quot;laptop&quot; expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at testCases.TC08_Advance_Search_Page.testAdvanceSearch(TC08_Advance_Search_Page.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
 <td>2</td>
-<td>testCases.TC06_PurchaseAGiftCertificate@26ceffa8</td></tr>
-<tr>
-<td title='testCases.TC02_Login.testLogin()'><b>testLogin</b><br>Test class: testCases.TC02_Login<br>Parameters: shalaka.dongre@gmail.com, Test123!</td>
-<td></td>
-<td>2</td>
-<td>testCases.TC02_Login@7c8c9a05</td></tr>
-<tr>
-<td title='testCases.TC04_CompletePurchase.testCompletePurchase()'><b>testCompletePurchase</b><br>Test class: testCases.TC04_CompletePurchase</td>
-<td></td>
-<td>70</td>
-<td>testCases.TC04_CompletePurchase@5c2375a9</td></tr>
-<tr>
-<td title='testCases.TC02_Login.testLogin()'><b>testLogin</b><br>Test class: testCases.TC02_Login<br>Parameters: goodmorning@gmail.com, test@1234</td>
-<td></td>
-<td>2</td>
-<td>testCases.TC02_Login@7c8c9a05</td></tr>
-<tr>
-<td title='testCases.TC03_AddToCart.testAddAnItemToWishList()'><b>testAddAnItemToWishList</b><br>Test class: testCases.TC03_AddToCart</td>
-<td></td>
-<td>1</td>
-<td>testCases.TC03_AddToCart@600b90df</td></tr>
-<tr>
-<td title='testCases.TC05_AddAnItemToWishList.testAddToCart()'><b>testAddToCart</b><br>Test class: testCases.TC05_AddAnItemToWishList</td>
-<td></td>
-<td>1</td>
-<td>testCases.TC05_AddAnItemToWishList@d41f816</td></tr>
-<tr>
-<td title='testCases.TC01_LaunchApplication.testLaunchApplication()'><b>testLaunchApplication</b><br>Test class: testCases.TC01_LaunchApplication</td>
-<td></td>
-<td>1</td>
-<td>testCases.TC01_LaunchApplication@7b205dbd</td></tr>
-<tr>
-<td title='testCases.TC02_Login.testLogin()'><b>testLogin</b><br>Test class: testCases.TC02_Login<br>Parameters: sid@cloudberry.services, Test123</td>
-<td></td>
-<td>2</td>
-<td>testCases.TC02_Login@7c8c9a05</td></tr>
-<tr>
-<td title='testCases.TC02_Login.testLogin()'><b>testLogin</b><br>Test class: testCases.TC02_Login<br>Parameters: otisdog22@yahoo.com, 1234QWERT</td>
-<td></td>
-<td>2</td>
-<td>testCases.TC02_Login@7c8c9a05</td></tr>
-<tr>
-<td title='testCases.TC02_Login.testLogin()'><b>testLogin</b><br>Test class: testCases.TC02_Login<br>Parameters: test121@test.com, test123</td>
-<td></td>
-<td>2</td>
-<td>testCases.TC02_Login@7c8c9a05</td></tr>
+<td>testCases.TC08_Advance_Search_Page@31ff43be</td></tr>
 </table><p>
 </body>
 </html>

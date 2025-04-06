@@ -2,9 +2,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>NinjaV7</groupId>
-	<artifactId>NinjaV7</artifactId>
+	<groupId>AdlibSearchQA</groupId>
+	<artifactId>AdlibSearchQA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 
 	<build>
 		<pluginManagement>
@@ -102,7 +103,13 @@
 			<version>2.24.3</version>
 			<scope>test</scope>
 		</dependency>
-
+		<!--
+		https://mvnrepository.com/artifact/com.applitools/eyes-selenium-java5 -->
+		<dependency>
+			<groupId>com.applitools</groupId>
+			<artifactId>eyes-selenium-java5</artifactId>
+			<version>5.79.0</version>
+		</dependency>
 
 	</dependencies>
 

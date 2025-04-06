@@ -6,7 +6,7 @@
 <run>
 <include name="smoke"></include>
 <include name="regression"></include>
-<include name="datadriven"></include>
+<!-- <include name="datadriven"></include> -->
 </run>
 </groups>
 
@@ -14,29 +14,20 @@
 <listener class-name="utilities.ExtentReportManager"/>
 </listeners>
 
-  <test  name="chromeTest">
-  <parameter name="os" value="Mac"></parameter>
-  <parameter name="browser" value="chrome"></parameter>
+  <test name="chromeTest">
+    <parameter name="os" value="Mac"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC01_LaunchApplication"/>
-      <class name="testCases.TC06_PurchaseAGiftCertificate"/>
-      <class name="testCases.TC03_AddToCart"/>
-      <class name="testCases.TC02_Login"/>
-      <class name="testCases.TC05_AddAnItemToWishList"/>
-      <class name="testCases.TC04_CompletePurchase"/>
+      <class name="testCases.TC08_Advance_Search_Page"/>
+      <class name="testCases.TC09_UIValidation"/>
     </classes>
-  </test> 
+  </test>
   
-    <test name="edgeTest">
+ <!--    <test name="edgeTest">
   <parameter name="os" value="Mac"></parameter>
   <parameter name="browser" value="edge"></parameter>
     <classes>
-      <class name="testCases.TC01_LaunchApplication"/>
-      <class name="testCases.TC06_PurchaseAGiftCertificate"/>
-      <class name="testCases.TC03_AddToCart"/>
-      <class name="testCases.TC02_Login"/>
-      <class name="testCases.TC05_AddAnItemToWishList"/>
-      <class name="testCases.TC04_CompletePurchase"/>
+    <class name="testCases.TC08_Advance_Search_Page"/>
     </classes>
   </test> 
   
@@ -44,13 +35,8 @@
   <parameter name="os" value="Mac"></parameter>
   <parameter name="browser" value="firefox"></parameter>
     <classes>
-      <class name="testCases.TC01_LaunchApplication"/>
-      <class name="testCases.TC06_PurchaseAGiftCertificate"/>
-      <class name="testCases.TC03_AddToCart"/>
-      <class name="testCases.TC02_Login"/>
-      <class name="testCases.TC05_AddAnItemToWishList"/>
-      <class name="testCases.TC04_CompletePurchase"/>
+    <class name="testCases.TC08_Advance_Search_Page"/>
     </classes>
-  </test> 
+  </test> --> 
   
 </suite> <!-- Suite -->

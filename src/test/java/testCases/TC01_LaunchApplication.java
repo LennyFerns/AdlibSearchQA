@@ -25,10 +25,10 @@ public class TC01_LaunchApplication extends BaseClass {
 
             // Assertion with try-catch block
             try {
-                Assert.assertEquals(confirmation, "Qafox.com");
-                logger.info("Assertion passed: Homepage confirmation text is 'Qafox.com'"); // Info log
+                Assert.assertEquals(confirmation, "nopCommerce demo store");
+                logger.info("Assertion passed: Homepage confirmation text is 'nopCommerce demo store'"); // Info log
             } catch (AssertionError e) {
-                logger.error("Assertion failed: Expected 'Qafox.com' but found '{}'", confirmation, e); // Error log
+                logger.error("Assertion failed: Expected 'nopCommerce demo store' but found '{}'", confirmation, e); // Error log
                 throw e; // Re-throw the assertion error for RetryAnalyzer
             }
 

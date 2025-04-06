@@ -1,2 +1,2 @@
-cd /Users/lennoxfernandes/eclipse-workspace/NinjaV6
+cd /Users/lennoxfernandes/eclipse-workspace/Adlib
 mvn test

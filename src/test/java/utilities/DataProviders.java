@@ -32,6 +32,26 @@ public class DataProviders {
 	}
 
 	// DataProvider 2
+	
+	@DataProvider(name = "SearchData")
+	public String[][] getSearchData() throws IOException {
+	    String path = "./testData/search_testdata.xlsx"; // Path to testdata.xlsx
+
+	    ExcelUtility xlutil = new ExcelUtility(path); // Create an object for XLUtility
+
+	    int totalrows = xlutil.getRowCount("Sheet1"); 
+	    int totalcols = xlutil.getCellCount("Sheet1", 1);
+
+	    String searchData[][] = new String[totalrows][totalcols]; 
+
+	    for (int i = 1; i <= totalrows; i++) { 
+	        for (int j = 0; j < totalcols; j++) { 
+	            searchData[i - 1][j] = xlutil.getCellData("Sheet1", i, j); 
+	        }
+	    }
+	    return searchData; 
+	}
+	 
 
 	// DataProvider 3
 

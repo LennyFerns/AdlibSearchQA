@@ -14,46 +14,47 @@ public class HomePage extends BasePage {
 
 	// Locators
 
-	@FindBy(xpath = "//a[normalize-space()='Qafox.com']")
-	WebElement content_HomePage;
-
 	// Locators
-	@FindBy(xpath = "//a[@title='My Account']")
-	WebElement link_MyAccount;
 
-	@FindBy(xpath = "//a[normalize-space()='Login']")
-	WebElement link_Login;
+		@FindBy(xpath = "//img[@alt='nopCommerce demo store']")
+		WebElement content_HomePage;
 
-	@FindBy(xpath = "//a[normalize-space()='Laptops & Notebooks']")
-	WebElement laptopsAndNotebooksMenu;
+		// Locators
+		@FindBy(xpath = "//input[@id='small-searchterms']")
+		WebElement search_input_Homepage;
 
-	@FindBy(xpath = "//a[normalize-space()='Show AllLaptops & Notebooks']")
-	WebElement showAllLaptopsAndNotebooks;
+		@FindBy(xpath = "//button[normalize-space()='Search']")
+		WebElement btn_search;
 
-	@FindBy(xpath = "//a[normalize-space()='Gift Certificates']")
-	private WebElement giftCertificateLink;
+		@FindBy(xpath = "//a[normalize-space()='Search']")
+		WebElement link_search_footer;
+		
 
 	// Action Methods
+		
+		
+		public String confirmHomepage() {
+			return content_HomePage.getText();
+		}
+		
+		public void clickSearchInput() {
+			search_input_Homepage.click();
+		}
 
-	public void clickMyAccount() {
-		link_MyAccount.click();
-	}
 
-	public void goToLogin() {
-		link_Login.click();
-	}
+		public void setkeyword(String keyword) {
+			search_input_Homepage.sendKeys(keyword);
+		}
+		
+		public void clickSearchButton() {
+			btn_search.click();
+		}
+		
+		// This clicks the footer "Search" link 
+		public void clickSearchFooterLink() {
+			link_search_footer.click();
+		}
 
-	public String confirmHomepage() {
-		return content_HomePage.getText();
-	}
-
-	public void navigateToLaptopsAndNotebooks() {
-		laptopsAndNotebooksMenu.click();
-		showAllLaptopsAndNotebooks.click();
-	}
-
-	public void clickGiftCertificateLink() {
-		wait.until(ExpectedConditions.elementToBeClickable(giftCertificateLink)).click();
-	}
+		
 
 }

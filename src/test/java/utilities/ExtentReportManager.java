@@ -51,7 +51,7 @@ public class ExtentReportManager implements ITestListener {
 		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Application", "Ninja");
+		extent.setSystemInfo("Application", "Adlib");
 		extent.setSystemInfo("Module", "Admin");
 		extent.setSystemInfo("Sub Module", "Customers");
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
@@ -102,9 +102,9 @@ public class ExtentReportManager implements ITestListener {
 
 	public void onFinish(ITestContext testContext) {
 		
-		extent.flush();
+		extent.flush();   // REQUIRED to generate the file
 		
-		String pathOfExtentReport = System.getProperty("user.dir")+"./reports/"+repName;
+		String pathOfExtentReport = System.getProperty("user.dir")+"/reports/"+repName;
 		File extentReport = new File(pathOfExtentReport);
 		
 		try {

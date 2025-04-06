@@ -85,7 +85,13 @@ Ensure the following are installed on your machine:
 
 🔧 Configuration (config.properties)
 
-Located at src/test/resources/config.properties
+The framework is designed to support both local and remote (Selenium Grid) execution environments.
+
+- This is controlled via the execution_env property in config.properties.
+
+> Located at src/test/resources/config.properties
+
+<pre>execution_env=local   # or 'remote'</pre>
 <pre>
 execution_env=local
 appURL=https://demo.nopcommerce.com/search

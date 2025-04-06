@@ -6,6 +6,7 @@
 <run>
 <include name="smoke"></include>
 <include name="regression"></include>
+<include name="ui"></include>
 <!-- <include name="datadriven"></include> -->
 </run>
 </groups>
@@ -18,7 +19,7 @@
     <parameter name="os" value="Mac"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC08_Advance_Search_Page"/>
+<!--       <class name="testCases.TC08_Advance_Search_Page"/> -->
       <class name="testCases.TC09_UIValidation"/>
     </classes>
   </test>

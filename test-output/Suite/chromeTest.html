@@ -57,11 +57,11 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 05 21:10:18 EDT 2025</td>
+<td>Started on:</td><td>Sun Apr 06 17:25:26 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>79 seconds (79568 ms)</td>
+<tr><td>Total time:</td><td>98 seconds (98372 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>regression smoke </td>
+<td>Included groups:</td><td>ui regression smoke </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -76,20 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC08_Advance_Search_Page.testAdvanceSearch()'><b>testAdvanceSearch</b><br>Test class: testCases.TC08_Advance_Search_Page<br>Parameters: laptop, Computers, TRUE, HP, TRUE, Results contain "laptop"</td>
-<td><div><pre>java.lang.AssertionError: Expected result not found: Results contain &quot;laptop&quot; expected [true] but found [false]
-	at testCases.TC08_Advance_Search_Page.testAdvanceSearch(TC08_Advance_Search_Page.java:49)
+<td title='testCases.TC09_UIValidation.testSearchPageUI()'><b>testSearchPageUI</b><br>Test class: testCases.TC09_UIValidation</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.test&quot; is null
+	at testCases.TC09_UIValidation.testSearchPageUI(TC09_UIValidation.java:77)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace970544071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace970544071'><pre>java.lang.AssertionError: Expected result not found: Results contain &quot;laptop&quot; expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at testCases.TC08_Advance_Search_Page.testAdvanceSearch(TC08_Advance_Search_Page.java:49)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1373671404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1373671404'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.test&quot; is null
+	at testCases.TC09_UIValidation.testSearchPageUI(TC09_UIValidation.java:77)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -111,8 +108,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
 </pre></div></td>
-<td>18</td>
-<td>testCases.TC08_Advance_Search_Page@3bcbb589</td></tr>
+<td>88</td>
+<td>testCases.TC09_UIValidation@67c2e933</td></tr>
 </table><p>
 </body>
 </html>
